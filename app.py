@@ -64,11 +64,11 @@ def visualize_data(df, compute_kw, cores_kw):
     price = get_price(df, id_f)
 
     #Step 3: Load all images
-    image_server_rack = Image.open(r"./images\dell_server_rack.png")
-    image_server_rack2 = Image.open(r"./images\dell_server_rack2.jpg")
-    image_server_rack3 = Image.open(r"./images\dell_server_rack3.png") #Change images 3, 4, and 5
-    image_server_rack4 = Image.open(r"./images\dell_server_rack4.jpg")
-    image_server_rack5 = Image.open(r"./images\dell_server_rack5.png")
+    image_server_rack = Image.open(r"./images/dell_server_rack.png")
+    image_server_rack2 = Image.open(r"./images/dell_server_rack2.jpg")
+    image_server_rack3 = Image.open(r"./images/dell_server_rack3.png") #Change images 3, 4, and 5
+    image_server_rack4 = Image.open(r"./images/dell_server_rack4.jpg")
+    image_server_rack5 = Image.open(r"./images/dell_server_rack5.png")
 
 
     #Step 4: Visualize Price and Image using if logic
