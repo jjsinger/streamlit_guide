@@ -28,7 +28,7 @@ def main():
 @st.cache
 def load_data():
     #df = pd.read_excel("data\cores_compute.xlsx", index_col='ID')
-    df = pd.read_csv("data\cores_compute.csv", index_col='ID')
+    df = pd.read_csv("https://raw.githubusercontent.com/jjsinger/streamlit_guide/master/data/cores_compute.csv", index_col='ID')
     return df
 #write function that gets the id where compute and core are located
 def get_id(df_kw, compute_kw, cores_kw):
