@@ -10,8 +10,8 @@ def main():
     page = st.sidebar.selectbox("Choose a page", ["Homepage", "Exploration"])
 
     if page == "Homepage":
-        st.header("DELL EMC Test page")
-        st.write("Ignore the dataset for now it is displayed for testing purposes. Please select the Exploration tab on the left.")
+        st.header("This is your data explorer.")
+        st.write("Ignore the dataset for now it is displayed for testing purposes. Please select the Exploration on the left.")
         st.write(df)
     elif page == "Exploration":
         st.title("Dell EMC Edge Infrastructure Solutions")
@@ -27,8 +27,7 @@ def main():
 
 @st.cache
 def load_data():
-    #df = pd.read_excel("data\cores_compute.xlsx", index_col='ID')
-    df = pd.read_csv("data\cores_compute.csv", index_col='ID')
+    df = pd.read_excel("data\cores_compute.xlsx", index_col='ID')
     return df
 #write function that gets the id where compute and core are located
 def get_id(df_kw, compute_kw, cores_kw):
